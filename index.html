@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Coding</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #02343F;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        text-align: center;
+        /* Center the image */
+        padding: 20px;
+        /* Add some padding */
+        background-color: #02343F;
+        /* Optional background color */
+      }
+      .header-img {
+        max-width: 100%;
+        /* Make image responsive */
+        height: auto;
+        /* Maintain aspect ratio */
+        max-height: 200px;
+        /* Optional: Limit image height */
+        border-radius: 20px;
+      }
+      section {
+        margin: 20px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #fff;
+        max-height: 400px;
+        /* Adjust as needed */
+        overflow-y: scroll;
+        /* Always show vertical scrollbar */
+        padding: 15px;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+        background: #02343F;
+        border-radius: 8px;
+      }
+      .section-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #333;
+        text-align: center;
+      }
+      .video-links {
+        list-style: none;
+        padding: 0;
+      }
+      .video-links li {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+      }
+      .video-links a {
+        text-decoration: none;
+        color: #F0EDCC;
+        font-size: 16px;
+        margin-left: 10px;
+        line-height: 1.5;
+      }
+      .video-links a:hover {
+        text-decoration: underline;
+      }
+      .thumbnail {
+        width: 200px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+      .container {
+        width: 80%;
+        margin: 0 auto;
+      }
+      .video-title {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .original-title {
+        text-align: center;
+        color: #02343F;
+        /* White text */
+        font-weight: bold;
+        /* Bold text */
+        background-color: #F0EDCC;
+      }
+      /* Table of Contents Styling */
+      .toc {
+        background-color: #F0EDCC;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        position: relative;
+        top: 20px;
+        width: 200px;
+        margin: 50px auto;
+        text-align: center;
+      }
+      .toc h2 {
+        margin-top: 0;
+        color: #02343F;
+        font-size: 1.5em;
+      }
+      .toc-button {
+        display: block;
+        width: 100%;
+        height: 50%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        font-size: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+        font-weight: bold;
+      }
+      .js-button {
+        background-color: #02343F;
+        /* JavaScript yellow */
+        color: #fff;
+        font-size: 10px
+      }
+      .js-button:hover {
+        transform: translateY(-3px);
+      }
+      .css-button {
+        background-color: #02343F;
+        /* CSS blue */
+        color: #fff;
+        font-size: 10px
+      }
+      .css-button:hover {
+        transform: translateY(-3px);
+      }
+      .html-button {
+        background-color: #02343F;
+        color: #fff;
+        font-size: 10px
+      }
+      .html-button:hover {
+        transform: translateY(-3px);
+      }
+      .other-button {
+        background-color: #02343F;
+        color: #fff;
+        font-size: 10px
+      }
+      .other-button:hover {
+        transform: translateY(-3px);
+      }
+      .docker-button {
+        background-color: #02343F;
+        color: #fff;
+        font-size: 10px
+      }
+      .docker-button:hover {
+        transform: translateY(-3px);
+      }
+      .mern-stack-button {
+        background-color: #02343F;
+        color: #fff;
+        font-size: 10px
+      }
+      .mern-stack-button:hover {
+        transform: translateY(-3px);
+      }
+      .web-development-button {
+        background-color: #02343F;
+        color: #fff;
+        font-size: 10px
+      }
+      .web-development-button:hover {
+        transform: translateY(-3px);
+      }
+      .syntax-and-coding-button {
+        background-color: #02343F;
+        color: #fff;
+        font-size: 10px
+      }
+      .syntax-and-coding-button:hover {
+        transform: translateY(-3px);
+      }
+      .devops-button {
+        background-color: #02343F;
+        color: #fff;
+        font-size: 10px
+      }
+      .devops-button:hover {
+        transform: translateY(-3px);
+      }
+      .api-button {
+        background-color: #02343F;
+        color: #fff;
+        font-size: 10px
+      }
+      .api-button:hover {
+        transform: translateY(-3px);
+      }
+      .git-and-github-button {
+        background-color: #02343F;
+        color: #fff;
+        font-size: 10px
+      }
+      .git-and-github-button:hover {
+        transform: translateY(-3px);
+      }
+      .linux-button {
+        background-color: #02343F;
+        color: #fff;
+        font-size: 10px
+      }
+      .linux-button:hover {
+        transform: translateY(-3px);
+      }
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="https://i.postimg.cc/VvVLbSFC/Picsart-25-08-24-22-26-27-742.jpg" alt="Header Image" class="header-img">
+    </header>
+    <div class="container">
+      <div class="toc">
+        <h2>Table of Contents</h2>
+        <button class="toc-button js-button" onclick="scrollToSection('js-section')">JavaScript Section</button>
+        <button class="toc-button css-button" onclick="scrollToSection('css-section')">CSS Section</button>
+        <button class="toc-button html-button" onclick="scrollToSection('html-section')">HTML Section</button>
+        <button class="toc-button other-button" onclick="scrollToSection('other-section')">Other Section</button>
+        <button class="toc-button docker-button" onclick="scrollToSection('docker-section')">Docker Section</button>
+        <button class="toc-button mern-stack-button" onclick="scrollToSection('mern-stack-section')">MERN Stack Section</button>
+        <button class="toc-button web-development-button" onclick="scrollToSection('web-development-section')">Web Development</button>
+        <button class="toc-button syntax-and-coding-button" onclick="scrollToSection('syntax-and-coding-section')">Syntax and Coding</button>
+        <button class="toc-button devops-button" onclick="scrollToSection('devops-section')">DevOps</button>
+        <button class="toc-button api-button" onclick="scrollToSection('api-section')">API</button>
+        <button class="toc-button git-and-github-button" onclick="scrollToSection('git-and-github-section')">Git and GitHub Section</button>
+        <button class="toc-button linux-button" onclick="scrollToSection('linux-section')">Linux Section</button>
+      </div>
+
+      <!-- JavaScript Section -->
+      <section class="original-title">JavaScript</section>
+      <section id="js-section">
+        <div class="section-title"> </div>
+        <ul class="video-links">
+
+          <!-- JavaScript Video Links with Thumbnails and Titles -->
+          <li>
+            <a href="https://youtu.be/cpoXLj24BDY?si=j8p5Chpaaohw2znb" target="_blank">
+              <img src="https://img.youtube.com/vi/cpoXLj24BDY/hqdefault.jpg" alt="Thumbnail 1" class="thumbnail">
+              <div class="video-title">🚀 🔥 JavaScript Complete Course (2024) 4 Projects | Notes | GitHub | Free Certification</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/ajdRvxDWH4w?si=Cno129u57upoCf9D" target="_blank">
+              <img src="https://img.youtube.com/vi/ajdRvxDWH4w/hqdefault.jpg" alt="Thumbnail 1" class="thumbnail">
+              <div class="video-title">Now playing JavaScript Full Course ❤️ | Variables & Data Types | Lecture 1 Shradha Khapra</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/Zg4-uSjxosE?si=VmQSS6ip2bCCjQm7" target="_blank">
+              <img src="https://img.youtube.com/vi/Zg4-uSjxosE/hqdefault.jpg" alt="Thumbnail 2" class="thumbnail">
+              <div class="video-title">Lecture 2: Operators and Conditional Statements | JavaScript Full Course Shradha Khapra</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/P0XMXqDGttU?si=8T68N20o7aoJ5TGR" target="_blank">
+              <img src="https://img.youtube.com/vi/UmRtFFSDSFo/hqdefault.jpg" alt="Thumbnail 3" class="thumbnail">
+              <div class="video-title">Lecture 3: Loops and Strings | JavaScript Full Course Shradha Khapra</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/gFWhbjzowrM?si=WLIkhyU997RjxpT4" target="_blank">
+              <img src="https://img.youtube.com/vi/gFWhbjzowrM/hqdefault.jpg" alt="Thumbnail 4" class="thumbnail">
+              <div class="video-title">Lecture 4: Arrays | JavaScript Full Course Shradha Khapra</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/P0XMXqDGttU?si=JBQMxHpScWlcWgUP" target="_blank">
+              <img src="https://img.youtube.com/vi/P0XMXqDGttU/hqdefault.jpg" alt="Thumbnail 5" class="thumbnail">
+              <div class="video-title">Lecture 5: Functions & Methods | JavaScript Full Course Shradha Khapra</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/7zcXPCt8Ck0?si=frZYH1WAGsK33D5E" target="_blank">
+              <img src="https://img.youtube.com/vi/7zcXPCt8Ck0/hqdefault.jpg" alt="Thumbnail 5" class="thumbnail">
+              <div class="video-title">Lecture 6: DOM - Document Object Model | JavaScript Full Course | Part 1 Shradha Khapra</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/fXAGTOZ25H8?si=jC77Ney2AmWFt-Kp" target="_blank">
+              <img src="https://img.youtube.com/vi/fXAGTOZ25H8/hqdefault.jpg" alt="Thumbnail 5" class="thumbnail">
+              <div class="video-title">Lecture 7: DOM (Part 2) | Document Object Model | JavaScript Full Course Shradha Khapra</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/_i-uLJAh79U?si=c1yPZXf-goAZRNrL" target="_blank">
+              <img src="https://img.youtube.com/vi/_i-uLJAh79U/hqdefault.jpg" alt="Thumbnail 5" class="thumbnail">
+              <div class="video-title">Lecture 8: Events in JavaScript | JavaScript Full Course Shradha Khapra</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/SqrppLEljkY?si=H2ahfqKbHI1AnL2E" target="_blank">
+              <img src="https://img.youtube.com/vi/SqrppLEljkY/hqdefault.jpg" alt="Thumbnail 5" class="thumbnail">
+              <div class="video-title">Lecture 9: Tic Tac Toe Game in JavaScript | JS Project | JavaScript Full Course</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/_V33HCZWLDQ?si=s7HgLtPNbrkvknwS" target="_blank">
+              <img src="https://img.youtube.com/vi/_V33HCZWLDQ/hqdefault.jpg" alt="Thumbnail 5" class="thumbnail">
+              <div class="video-title">Lecture 10: MiniProject - Stone, Paper & Scissors Game | JavaScript Full Course Shradha Khapra</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/N-O4w6PynGY?si=TMA3_T5xXt7oLbT1" target="_blank">
+              <img src="https://img.youtube.com/vi/N-O4w6PynGY/hqdefault.jpg" alt="Thumbnail 5" class="thumbnail">
+              <div class="video-title">Lecture 11: Classes & Objects | JavaScript Full Course</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/d3jXofmQm44?si=mvZ6tEqkNZaRoRWp" target="_blank">
+              <img src="https://img.youtube.com/vi/d3jXofmQm44/hqdefault.jpg" alt="Thumbnail 5" class="thumbnail">
+              <div class="video-title">Lecture 12: Callbacks, Promises & Async Await | JavaScript Full Course Shradha Khapra</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/CyGodpqcid4?si=3Q42WuXi3Y54THdp" target="_blank">
+              <img src="https://img.youtube.com/vi/CyGodpqcid4/hqdefault.jpg" alt="Thumbnail 5" class="thumbnail">
+              <div class="video-title">Last Lecture: Fetch API with Project | JavaScript Full Course Shradha Khapra</div>
+            </a>
+          </li>
+
+          <!-- Add more JavaScript videos as needed -->
+        </ul>
+      </section>
+
+      <!-- CSS Section -->
+      <section class="original-title">CSS</section>
+      <section id="css-section">
+        <div class="section-title"> </div>
+        <ul class="video-links">
+
+          <!-- CSS Video Links with Thumbnails and Titles -->
+          <li>
+            <a href="https://youtu.be/sqJ6xZ9mUwE?si=xuIl71oYOWice9N_" target="_blank">
+              <img src="https://img.youtube.com/vi/sqJ6xZ9mUwE/hqdefault.jpg" alt="Thumbnail 1" class="thumbnail">
+              <div class="video-title">CSS - What is selectors? | Web Development Course Apna College</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/4nC4VXHlys8?si=32b5c-tFDkLIbJz7" target="_blank">
+              <img src="https://img.youtube.com/vi/4nC4VXHlys8/hqdefault.jpg" alt="Thumbnail 2" class="thumbnail">
+              <div class="video-title">Properties in CSS | Web Development Course | CSS Lecture 2</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/C01LeeMhwHc?si=4EGJoaJnJrBRoA_I" target="_blank">
+              <img src="https://img.youtube.com/vi/C01LeeMhwHc/hqdefault.jpg" alt="Thumbnail 3" class="thumbnail">
+              <div class="video-title">Understanding Box Model | Styling List and Tables | CSS Lecture 3</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/wKPlQkOdpFQ?si=MBp30V9WoqKTFu7n" target="_blank">
+              <img src="https://img.youtube.com/vi/wKPlQkOdpFQ/hqdefault.jpg" alt="Thumbnail 4" class="thumbnail">
+              <div class="video-title">Understanding Cascading , Specificity and Inheritance | CSS Lecture 4</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/6Cpd63_WXdI?si=KGr5l9u4nnP7iPFV" target="_blank">
+              <img src="https://img.youtube.com/vi/6Cpd63_WXdI/hqdefault.jpg" alt="Thumbnail 5" class="thumbnail">
+              <div class="video-title">Styling Forms in CSS | Web Development Course | Lecture 5 of CSS</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/l-EkcthUMl4?si=iROozksoCQYPNpYx" target="_blank">
+              <img src="https://img.youtube.com/vi/l-EkcthUMl4/hqdefault.jpg" alt="Thumbnail 6" class="thumbnail">
+              <div class="video-title">Debugging in CSS | Web Development Course</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/p870o46o1bM?si=L_EnRNvThtosfVCJ" target="_blank">
+              <img src="https://img.youtube.com/vi/p870o46o1bM/hqdefault.jpg" alt="Thumbnail 7" class="thumbnail">
+              <div class="video-title">What is Responsiveness? CSS | Web Development Course | Lecture 7</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/xpoWxFyGuC8?si=lizvEVBa-PlouLnB" target="_blank">
+              <img src="https://img.youtube.com/vi/xpoWxFyGuC8/hqdefault.jpg" alt="Thumbnail 8" class="thumbnail">
+              <div class="video-title">Floats & Position Properties | CSS | Web Development Course</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/zts6uNVnCNs?si=wQlzkDc7hfMJO47c" target="_blank">
+              <img src="https://img.youtube.com/vi/zts6uNVnCNs/hqdefault.jpg" alt="Thumbnail 9" class="thumbnail">
+              <div class="video-title">Learn Flexbox Under 25mins | Web Development Course</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/xBSlwwitD5U?si=NOqXXVwTtPqMxM40" target="_blank">
+              <img src="https://img.youtube.com/vi/xBSlwwitD5U/hqdefault.jpg" alt="Thumbnail 9" class="thumbnail">
+              <div class="video-title">CSS Grid | Web Development Course</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/Xdhdgl0Ju4k?si=McQOk5RtK2_biO23" target="_blank">
+              <img src="https://img.youtube.com/vi/Xdhdgl0Ju4k/hqdefault.jpg" alt="Thumbnail 9" class="thumbnail">
+              <div class="video-title">Learn Animations in CSS</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/IZa8pbR8CWs?si=bphnJmXnmiYrV-iX" target="_blank">
+              <img src="https://img.youtube.com/vi/IZa8pbR8CWs/hqdefault.jpg" alt="Thumbnail 9" class="thumbnail">
+              <div class="video-title">Adding CSS to Mega Project</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/ywK_wgQwKJY?si=3BdFxAaSFrpAK9RS" target="_blank">
+              <img src="https://img.youtube.com/vi/ywK_wgQwKJY/hqdefault.jpg" alt="Thumbnail 9" class="thumbnail">
+              <div class="video-title">Updating Design of Mega Project | Web Development Course</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/DUiYVJIVNcA?si=SRQv0bCx1V-x1ct3" target="_blank">
+              <img src="https://img.youtube.com/vi/DUiYVJIVNcA/hqdefault.jpg" alt="Thumbnail 9" class="thumbnail">
+              <div class="video-title">Namaste World in Bootstrap | Web Development Course</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/ddWKdSS5TaQ?si=EbCKjxPRryZyfWgZ" target="_blank">
+              <img src="https://img.youtube.com/vi/ddWKdSS5TaQ/hqdefault.jpg" alt="Thumbnail 9" class="thumbnail">
+              <div class="video-title">Customization & Layout in Bootstrap | Web Development Course | Lecture 15</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/5NxYn0GiApg?si=HFiXQNBrbBCUp5nh" target="_blank">
+              <img src="https://img.youtube.com/vi/5NxYn0GiApg/hqdefault.jpg" alt="Thumbnail 9" class="thumbnail">
+              <div class="video-title">Bootstrap - Grid Layout | Web Development Course | Lecture 16</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/IwlAhfeSnp8?si=atGtYGAWQCM-anMp" target="_blank">
+              <img src="https://img.youtube.com/vi/IwlAhfeSnp8/hqdefault.jpg" alt="Thumbnail 9" class="thumbnail">
+              <div class="video-title">Bootstrap - Components | Web Development Course | Lecture 17</div>
+            </a>
+          </li>
+
+          <!-- Add more CSS videos as needed -->
+        </ul>
+      </section>
+
+      <!-- HTML Section -->
+      <section class="original-title">HTML</section>
+      <section id="html-section">
+        <div class="section-title"> </div>
+        <ul class="video-links">
+
+          <!-- HTML Video Links with Thumbnails and Titles -->
+          <li>
+            <a href="https://youtu.be/HcOc7P5BMi4?si=vKyiCuVP-59pwNVf" target="_blank">
+              <img src="https://img.youtube.com/vi/HcOc7P5BMi4/hqdefault.jpg" alt="Thumbnail 1" class="thumbnail">
+              <div class="video-title">HTML Tutorial for Beginners | Complete HTML with Notes & Code</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/Rek0NWPCNOc?si=NbxDLKUOlQONyzrg" target="_blank">
+              <img src="https://img.youtube.com/vi/Rek0NWPCNOc/hqdefault.jpg" alt="Thumbnail 1" class="thumbnail">
+              <div class="video-title">HTML Course | From Beginners to Advance Level | Lecture 1</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/2QR11oDukn4?si=cAQv_CeBYbcPXauW" target="_blank">
+              <img src="https://img.youtube.com/vi/2QR11oDukn4/hqdefault.jpg" alt="Thumbnail 2" class="thumbnail">
+              <div class="video-title">HTML Course | World's most premium HTML Course | Lecture 2 Apna College</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/jRAZlTEZi9I?si=QfrPoPGLkwAKyfXw" target="_blank">
+              <img src="https://img.youtube.com/vi/jRAZlTEZi9I/hqdefault.jpg" alt="Thumbnail 3" class="thumbnail">
+              <div class="video-title">HTML Course | Media Elements | Lecture 3</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/61ppyY5rUB0?si=VjbkvkOAvibI6v4I" target="_blank">
+              <img src="https://img.youtube.com/vi/jRAZlTEZi9I/hqdefault.jpg" alt="Thumbnail 3" class="thumbnail">
+              <div class="video-title">HTML | Structuring a Mega Project</div>
+            </a>
+          </li>
+
+          <!-- Add more HTML videos as needed -->
+        </ul>
+      </section>
+      <section class="original-title">Other</section>
+      <section id="other-section">
+        <div class="section-title"> </div>
+        <ul class="video-links">
+
+          <!-- Other Video Links with Thumbnails and Titles -->
+          <li>
+            <a href="https://youtu.be/gxHXPmePnvo?si=3DMKmzQ9sKGfEnBH" target="_blank">
+              <img src="https://img.youtube.com/vi/gxHXPmePnvo/hqdefault.jpg" alt="Thumbnail 3" class="thumbnail">
+              <div class="video-title">🚀🔥 Complete Backend Development in One Day (2025) | Hindi | Notes | GitHub | Free Certification</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/RNh8VHc8qkk?si=cDA0qUG8TXZSQaEn" target="_blank">
+              <img src="https://img.youtube.com/vi/RNh8VHc8qkk/hqdefault.jpg" alt="Thumbnail 3" class="thumbnail">
+              <div class="video-title">All about Digital Marketing | Simply Explained</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/Zff3rUY0iGg?si=8znE5O5LxzLniIg6" target="_blank">
+              <img src="https://img.youtube.com/vi/Zff3rUY0iGg/hqdefault.jpg" alt="Thumbnail 3" class="thumbnail">
+              <div class="video-title">How to Study MORE in LESS TIME 🔥 | 5 Principles | for students</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/Tm_vWtMsgOc?si=t0YmtDfTCGN5VyiK" target="_blank">
+              <img src="https://img.youtube.com/vi/Tm_vWtMsgOc/hqdefault.jpg" alt="Thumbnail 3" class="thumbnail">
+              <div class="video-title">CMS VS Custom Coded Websites</div>
+            </a>
+          </li>
+      </section>
+      <section class="original-title">Docker</section>
+      <section id="docker-section">
+        <div class="section-title"> </div>
+        <ul class="video-links">
+
+          <!-- Docker Video Links with Thumbnails and Titles -->
+          <li>
+            <a href="https://youtu.be/H8Lyj2D_cWo?si=OXNc2GZ2KZHNIVTx" target="_blank">
+              <img src="https://img.youtube.com/vi/H8Lyj2D_cWo/hqdefault.jpg" alt="Thumbnail 3" class="thumbnail">
+              <div class="video-title">What is Docker? Simply Explained by Shradha Ma'am</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/a-nWPre5QYI?si=fzq9iryHouXV_WjE" target="_blank">
+              <img src="https://img.youtube.com/vi/a-nWPre5QYI/hqdefault.jpg" alt="Thumbnail 3" class="thumbnail">
+              <div class="video-title">What is Kubernetes? | Kubernetes Explained</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/exmSJpJvIPs?si=_qDv8vV_gd6qhxVC" target="_blank">
+              <img src="https://img.youtube.com/vi/exmSJpJvIPs/hqdefault.jpg" alt="Thumbnail 3" class="thumbnail">
+              <div class="video-title">Docker Tutorial for beginners - Complete One Shot</div>
+            </a>
+          </li>
+      </section>
+      <section class="original-title">MERN Stack</section>
+      <section id="mern-stack-section">
+        <div class="section-title"> </div>
+        <ul class="video-links">
+
+          <!-- MERN Stack Video Links with Thumbnails and Titles -->
+          <li>
+            <a href="https://youtu.be/GdXF8rJEm3k?si=JAGDEmJG6GZjsMib" target="_blank">
+              <img src="https://img.youtube.com/vi/GdXF8rJEm3k/hqdefault.jpg" alt="Thumbnail 3" class="thumbnail">
+              <div class="video-title">Complete Full Stack Web Development Preparation : MERN Stack + 6 Major Projects | New Delta 7.0</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/CcFIrllSy2o?si=TNx0Dz-spoLTj9Un" target="_blank">
+              <img src="https://img.youtube.com/vi/CcFIrllSy2o/hqdefault.jpg" alt="Thumbnail 3" class="thumbnail">
+              <div class="video-title">Complete MERN Stack Developer Roadmap for Beginners (2024)</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/b5mhh5VQfNw?si=8zVztkOXtp5X0qfP" target="_blank">
+              <img src="https://img.youtube.com/vi/b5mhh5VQfNw/hqdefault.jpg" alt="Thumbnail 3" class="thumbnail">
+              <div class="video-title">Mastering MERN as a Beginner | Tanay Pratap #hindi</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/L_eF8az2cSA?si=P0X5QoqLodDKvV6L" target="_blank">
+              <img src="https://img.youtube.com/vi/L_eF8az2cSA/hqdefault.jpg" alt="Thumbnail 3" class="thumbnail">
+              <div class="video-title">Mastering MERN as a BEGINNER | Tanay Pratap Hindi</div>
+            </a>
+          </li>
+      </section>
+      <section class="original-title">Web Development</section>
+      <section id="web-development-section">
+        <div class="section-title"> </div>
+        <ul class="video-links">
+
+          <!-- Web Development Video Links with Thumbnails and Titles -->
+          <li>
+            <a href="https://youtu.be/z0n1aQ3IxWI?si=MJb7kbaf3O3Cvbwl" target="_blank">
+              <img src="https://img.youtube.com/vi/z0n1aQ3IxWI/hqdefault.jpg" alt="Thumbnail 3" class="thumbnail">
+              <div class="video-title">What is Web Development ? Complete RoadMap from Basics to Advanced | 2023</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/l1EssrLxt7E?si=gLSOy7d0FCjV4O1y" target="_blank">
+              <img src="https://img.youtube.com/vi/l1EssrLxt7E/hqdefault.jpg" alt="Thumbnail 3" class="thumbnail">
+              <div class="video-title">Introduction to Web Development | World's most premium Web Development Course | Lecture 0 (Reupload)</div>
+            </a>
+          </li>
+      </section>
+      <section class="original-title">Syntax and Coding</section>
+      <section id="syntax-and-coding-section">
+        <div class="section-title"> </div>
+        <ul class="video-links">
+
+          <!-- Syntax and Coding Video Links with Thumbnails and Titles -->
+          <li>
+            <a href="https://youtu.be/shoQfc0cJp4?si=znbYcEI-_h18cUQ2" target="_blank">
+              <img src="https://img.youtube.com/vi/shoQfc0cJp4/hqdefault.jpg" alt="Thumbnail 3" class="thumbnail">
+              <div class="video-title">Why People Quit Coding? 3 Major Reasons</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/vP2MNhC_Igw?si=eA9t6AR8T1XaTxVU" target="_blank">
+              <img src="https://img.youtube.com/vi/vP2MNhC_Igw/hqdefault.jpg" alt="Thumbnail 3" class="thumbnail">
+              <div class="video-title">Stop Trying To Memorize Code - Do This Instead</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/M--A6rBEnNE?si=GHEWunOPNaip6QZR" target="_blank">
+              <img src="https://img.youtube.com/vi/M--A6rBEnNE/hqdefault.jpg" alt="Thumbnail 3" class="thumbnail">
+              <div class="video-title">How To Remember Code ? - कोड कैसे याद रखे ? - Explained</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/nUr0-s_2r48?si=hOOZqPnzuGaMBmQE" target="_blank">
+              <img src="https://img.youtube.com/vi/nUr0-s_2r48/hqdefault.jpg" alt="Thumbnail 3" class="thumbnail">
+              <div class="video-title">How I remember syntax while programming?</div>
+            </a>
+          </li>
+      </section>
+      <section class="original-title">DevOps</section>
+      <section id="devops-section">
+        <div class="section-title"> </div>
+        <ul class="video-links">
+
+          <!-- DevOps Video Links with Thumbnails and Titles -->
+          <li>
+            <a href="https://youtu.be/h7LDnVsNRVI?si=doS9rcFOivkqZLXv" target="_blank">
+              <img src="https://img.youtube.com/vi/h7LDnVsNRVI/hqdefault.jpg" alt="Thumbnail 3" class="thumbnail">
+              <div class="video-title">What is DevOps? DevOps Explained | Simplest Explanation in Hindi</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/RRBF2YWXFtY?si=ccEXxp-b-awFMlKv" target="_blank">
+              <img src="https://img.youtube.com/vi/RRBF2YWXFtY/hqdefault.jpg" alt="Thumbnail 3" class="thumbnail">
+              <div class="video-title">DevOps Complete Guide for 2025</div>
+            </a>
+          </li>
+      </section>
+      <section class="original-title">API</section>
+      <section id="api-section">
+        <div class="section-title"> </div>
+        <ul class="video-links">
+
+          <!-- API Video Links with Thumbnails and Titles -->
+          <li>
+            <a href="https://youtu.be/XGa4onZP66Q?si=iLJtbab2mpETFXE_" target="_blank">
+              <img src="https://img.youtube.com/vi/XGa4onZP66Q/hqdefault.jpg" alt="Thumbnail 3" class="thumbnail">
+              <div class="video-title">What is an API ? Simply Explained</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/WRsKs-K6iII?si=xDCNaUOqCCgKdCxB" target="_blank">
+              <img src="https://img.youtube.com/vi/WRsKs-K6iII/hqdefault.jpg" alt="Thumbnail 3" class="thumbnail">
+              <div class="video-title">What is a Rest API? (in 2 Minutes)</div>
+            </a>
+          </li>
+      </section>
+      <section class="original-title">Git and Github</section>
+      <section id="git-and-github-section">
+        <div class="section-title"> </div>
+        <ul class="video-links">
+
+          <!-- Git and Guthub Video Links with Thumbnails and Titles -->
+          <li>
+            <a href="https://youtu.be/Ez8F0nW6S-w?si=uoafK9OqAXoIjhz8" target="_blank">
+              <img src="https://img.youtube.com/vi/Ez8F0nW6S-w/hqdefault.jpg" alt="Thumbnail 3" class="thumbnail">
+              <div class="video-title">Complete Git and GitHub Tutorial for Beginners</div>
+            </a>
+          </li>
+      </section>
+      <section class="original-title">Linux</section>
+      <section id="linux-section">
+        <div class="section-title"> </div>
+        <ul class="video-links">
+
+          <!-- Linux Video Links with Thumbnails and Titles -->
+          <li>
+            <a href="https://youtu.be/nDXX6LIJx8A?si=eeP9b0v3AGJ0bvl9" target="_blank">
+              <img src="https://img.youtube.com/vi/nDXX6LIJx8A/hqdefault.jpg" alt="Thumbnail 3" class="thumbnail">
+              <div class="video-title">Is Linux better than Windows?</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/qOktu4-fkfE?si=bQ4I8Nk1l8SkEWRK" target="_blank">
+              <img src="https://img.youtube.com/vi/qOktu4-fkfE/hqdefault.jpg" alt="Thumbnail 3" class="thumbnail">
+              <div class="video-title">Download & Install Ubuntu Linux💻 - [2025 New Method🔥] - Complete Ubuntu Linux Installation</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/rrw-Pv3rc0E?si=sIlrKWgNlD2bruj6" target="_blank">
+              <img src="https://img.youtube.com/vi/rrw-Pv3rc0E/hqdefault.jpg" alt="Thumbnail 3" class="thumbnail">
+              <div class="video-title">Is What is LINUX for Beginners? Understand Linux Distributions & Kernel [HINDI] | MPrashant</div>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <script>
+        // JavaScript for smooth scrolling to sections
+        function scrollToSection(sectionId) {
+          const section = document.getElementById(sectionId);
+          if (section) {
+            section.scrollIntoView({
+              behavior: 'smooth'
+            });
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>
